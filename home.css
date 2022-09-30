@@ -131,7 +131,6 @@ div.container {
 }
 
 div.container2 {
-  align-items: center;
   width: 100%;
   text-align: center;
   padding: 250px;
@@ -439,6 +438,16 @@ div.desc {
   }
 }
 
+@media screen and (max-width: 900px){
+div.container2 {
+  width: 100%;
+  display: block;
+  align-items: center;
+  text-align: center;
+  padding: 250px 1px;
+}
+
+}
 
 @media screen and (max-width: 700px){
   .box{
