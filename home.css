@@ -189,8 +189,12 @@ div.container2 {
 p.p1 {
   line-height: 1.8;
   text-align: justify;
-  font: 15px Arial, sans-serif;
-  color: #16213E;
+  font-size: 15px;
+  font-weight: 500;
+  background-image: linear-gradient(to left, #06283D, #06283D);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
   transition: 0.3s;
 }
 
@@ -214,9 +218,13 @@ p.p3 {
 }
 
 p.p5 {
-  line-height: 1.8;
-  font: 15px Arial, sans-serif;
-  color: #ffffff;
+  line-height: 1;
+  font-size: 15px;
+  font-weight: bold;
+  background-image: linear-gradient(to left, #ffffff, #ffffff);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
   transition: 0.3s;
   text-align: left;
 }
@@ -224,8 +232,12 @@ p.p5 {
 p.p5sub {
   line-height: 1.8;
   text-align: justify;
-  font: 12px Arial, sans-serif;
-  color: #f9f6f2;
+  font-size: 14px;
+  font-weight: 500;
+  background-image: linear-gradient(to left, #f9f6f2, #f9f6f2);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
   transition: 0.3s;
 }
 
@@ -242,7 +254,7 @@ h1{
 h1.headerprofile {
   font-size: 35px;
   font-weight: 500;
-  background-image: linear-gradient(to left, #ffffff, #f9f9f9);
+  background-image: linear-gradient(to left, #ffffff, #F9F9F9);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -350,11 +362,6 @@ div.image-wrapper:hover {
     border-left-color: transparent;
   }
 }
- 
- 
- 
- 
- 
 
 .box {
   width: 60%;
@@ -372,7 +379,7 @@ div.image-wrapper:hover {
   font-size: 10px;
   font-weight: bold;
   color: #ffffff;
-  opacity: 0.6;
+  opacity: 0.6; 
   padding: 4px 15px;
   border: 2px solid #fff;
   border-radius: 25px;
@@ -484,7 +491,12 @@ a{
 }
 
 #educ-h1{
-  color: white;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #f9f6f2, #f9f6f2);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 0.3s;
 }
 
 .flex-container {
@@ -603,6 +615,12 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #6E85B7, #354259);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 * {
