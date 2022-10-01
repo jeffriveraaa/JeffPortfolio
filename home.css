@@ -1,8 +1,38 @@
 body {
   color: #16213E;
-    background-color:#f0fff0;
+  background: linear-gradient(-45deg, #ffffff, #ffffff, #ffffff, #ffffff );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
   margin:0;
-  font-family: Arial;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;	
+}
+::-webkit-scrollbar {
+    width: 15px;  /* Remove scrollbar space */
+    background-color: rgba (0, 0, 0, 0);  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+}
+
+body, h1,h2,h3,h4,h5,h6 {
+	font-family: "Montserrat", sans-serif;
+	}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 html {
@@ -21,6 +51,9 @@ html {
   position: fixed;
   top: 0;
   width: 100%;
+background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
 .content {
@@ -37,9 +70,6 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-image: url("wcbg.jpg");
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
 }
 
 #abtmlnks {
@@ -80,6 +110,15 @@ li a {
   transition: 0.3s;
 }
 
+li a.active {
+  display: block;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
 li a:hover {
   background-color: #ffffff;
   color:#16213E;
@@ -114,9 +153,6 @@ img.socialicon {
 div.polaroid {
   width: 100%;
   height: 100%;
-  background-image: url("wcbg.jpg");
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
   margin-bottom: 25px;
 }
 
@@ -157,6 +193,21 @@ p.p3 {
   text-align: justify;
   font: 15px Arial, sans-serif;
   color: #16213E;
+}
+
+p.p5 {
+  line-height: 1.8;
+  text-align: justify;
+  font: 15px Arial, sans-serif;
+  color: #ffffff;
+}
+
+p.p5sub {
+  line-height: 1.8;
+  text-align: justify;
+  font: 13px Arial, sans-serif;
+  color: #f9f6f2;
+  transition: 0.3s;
 }
 
 p.p4 {
@@ -223,7 +274,7 @@ p.p2:hover {
   height: 1px;
   font-size: 1px;
   font-weight: bold;
-  color: #16213E;
+  color: #212335;
   padding: 4px 20px;
   background-color: #fff;
   border-radius: 25px;
@@ -231,7 +282,19 @@ p.p2:hover {
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
-.button:hover {
+
+.hide {
+  display: none;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 4px 20px;
+  border-radius: 25px;
+  width: 25px;
+  color: white;
+  
+}
+
+.button:hover{
+  font-size: 12px;
   padding: 4px 28px;
   background-color: rgba(255, 255, 255, 0.6);
 }
@@ -257,9 +320,13 @@ a{
 }
 
 .popup {
+
   margin: 320px auto;
   padding: 20px;
-  background: rgba(255, 255, 255, 1.0);
+  opacity: 1.0;
+  background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
   border-radius: 5px;
   width: 50%;
   position: relative;
@@ -377,6 +444,31 @@ a{
   content: "";
   display: table;
   clear: both;
+}
+
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
 }
 
 /* The bar container */
