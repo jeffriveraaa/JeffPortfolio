@@ -57,14 +57,6 @@ html {
   scroll-behavior: smooth;
 }
 
-#section1 {
-  height: auto;
-}
-
-#section2 {
-  height: auto;
-}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -716,8 +708,8 @@ div.container2 {
   }
 }
 
-@media screen and (max-width: 458px){
+@media screen and (max-width: 600px){
 	div.container {
-    padding: 100px 20px;
+    padding: 200px 20px;
 	}
 }
