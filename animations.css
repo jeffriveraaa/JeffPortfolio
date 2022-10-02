@@ -84,6 +84,7 @@
 
 
 section{
+  overflow: hidden;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -181,13 +182,14 @@ section .text-container .text-box h3{
 }
 
 .reveal{
+  position: relative;
+  transform: translateY(150px);
   opacity: 0;
   transition: 2s all ease;
 }
 
 .reveal.active{
   opacity: 1;
+ transform: translateY(0);
 }
-
-
 
