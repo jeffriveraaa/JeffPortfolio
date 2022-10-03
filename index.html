@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 <link rel="stylesheet" href="animations.css">
+<link rel="stylesheet" href="sub-css.css">
 </head>
 <body>
 <!-- Background & animion & navbar & title -->
@@ -17,19 +18,20 @@
        <div class="cube"></div>
        <div class="cube"></div>
        <div class="cube"></div>
-	   					<nav>	
-							<div id="navbar">
-							<ul class="header" id="myHeader">
-								<li><a class="active" href="#home">Home</a></li>
-								<li><a href="#skills">Skills</a></li>
-								<li><a href="#projects">Projects</a></li>
-								<li id="rightli"><a href="#about">About</a></li>
+						<nav id="main-nav">
+							<div class="container" id="navbar">
+							<ul>
+								<li class="home active"><a href="#home">Home</a></li>
+								<li class="skills"><a href="#skills">Skills</a></li>
+								<li class="projects"><a href="#projects">Projects</a></li>
+								<li class="about" id="rightli"><a href="#about">About</a></li>
 							</ul>
 							</div>
-						</nav>	
+						</nav>				
 	   <div class="main">
 		<div class="polaroid" id="home">
 		<div class="container">
+				<section class="blanksection" id="home"></section>	
 								<div class="image-wrapper"><img id="profilep" src="mypic.png"  class="center"></div>
 								<h1 class="headerprofile">Hi, I'm Jefferson Rivera!</h1>
 								<p class="p2">Front-End Developer, UI/UX Designer, Graphics Designer</p>
@@ -126,7 +128,6 @@
 			</div>
 	</div>
 </div>
-</section>
 <section id="about">
   <div class="container reveal">		
     <header>
@@ -162,15 +163,15 @@ When I was in my senior high school level, I started building simple websites bu
     <header>
         <h1>Skills</h1>
     </header>
+	<div class="spacer"></div>
     <div class="text-container">
       <div class="text-box">
    <div class="responsive">
   <div class="gallery">
-      <img src="decision-making.png" onclick="openTab('b1');">
+      <img src="decision-making.png">
     <div class="desc">Decision Making</div>
   </div>
 </div>
-
 
 <div class="responsive">
   <div class="gallery">

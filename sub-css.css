@@ -1,0 +1,90 @@
+#main-nav {
+  position: fixed;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+   color: #ffffff;
+  overflow: hidden;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0px 2px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#main-nav.sticky {
+	  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+	color: white;
+    z-index: 2;
+	position: fixed;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #7a51d0, #873260);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+
+.content {
+  padding: 16px;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.navbarOffsetMargin {
+  padding-top: 45px;
+}
+
+nav .container {
+margin: 0 auto;
+text-align: center;
+padding: 10px;
+}
+nav .container ul li {
+border-radius:5px;
+}
+nav .container ul li a {
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+nav .container ul li.active {
+  display: block;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+nav .container ul li.active a {
+  display: block;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+li a:hover {
+  background-color: rgba(255,255,255, 0.5);
+  color:#16213E;
+}
+
+div.spacer{
+	height:30px;
+}
+
+
+
+

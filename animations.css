@@ -98,6 +98,14 @@ section.section2{
   align-items: left;
 }
 
+section.blanksection{
+  display: none;
+}
+
+section.blanksection2{
+  display: none;
+}
+
 section:nth-child(1){
   color: #42455a;
   }

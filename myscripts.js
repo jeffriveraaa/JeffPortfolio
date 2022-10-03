@@ -1,30 +1,39 @@
 // Navbar
 
-window.onscroll = function() {myFunction()};
+let timVine = document.getElementById("tim-vine");
+let navbar = document.getElementById("main-nav");
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+let navPos = navbar.getBoundingClientRect().top;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+window.addEventListener("scroll", e => {
+  let scrollPos = window.scrollY;
+  if (scrollPos > navPos) {
+    navbar.classList.add('sticky');
+    header.classList.add('navbarOffsetMargin');
   } else {
-    navbar.classList.remove("sticky");
+    navbar.classList.remove('sticky');
+    header.classList.remove('navbarOffsetMargin');
   }
-}
+});
 
-window.onscroll = function() {myFunction()};
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll(".container ul li");
+window.onscroll = () => {
+  var current = "";
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 60) {
+      current = section.getAttribute("id"); }
+  });
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
+};
 
 
 // Scroll Trigger
