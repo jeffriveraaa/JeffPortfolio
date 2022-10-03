@@ -82,6 +82,7 @@
        <div class="cube"></div>
       <div class="cube"></div>
     </div>
+</div>
 <div id="popup2" class="overlay">
 	<div class="popup">
 								<a class="close" href="#popup1">&times;</a>
@@ -216,32 +217,7 @@ When I was in my senior high school level, I started building simple websites bu
 	</div>
       </div>
 		<div class="text">I used to create world game design for our capstone project using Unity 3D. I was assigned to create the world where the player will play the simulation. <br><br>
-		
-										<a href="#popup3">See more</a>
-
-			<div id="popup3" class="overlay2">
-				<div class="popup">
-								<a class="close" href="#skill-section">&times;</a>
-					<div class="content">
-		    
-						<div class="flex-container">
-							<div class="flex-child">  
-								<p class="p5"><b>BLANK PA</b></p>
-							<div class="flex-child3">
-								<p class="p5"><b>BLANK PA</b></p>
-								<a href = "mailto: jeffrivera09@gmail.com"><p class="p5sub" id="p11">BLANK BLANK BLANK BLANK</p></a>	 
-							</div>
-							</div>
-  
-							<div class="flex-child2">
-								<p class="p5"><b>BLANK PA</b></p>
-								<a href = "mailto: jeffrivera09@gmail.com"><p class="p5sub" id="p11">BLANK BLANK BLANK BLANK</p></a>	
-							</div>
-						</div>
-						</div>		
-					</div>
-				</div>
-		
+			<button class="button-on-tab" onclick="window.location.href='simulation.html';"><span>Learn More</span></button>
 		</div>
 	</div>
     <div class="desc">Unity 3D Game World Designer</div>
@@ -272,7 +248,8 @@ When I was in my senior high school level, I started building simple websites bu
 
 <div class="responsive">
   <div class="gallery">
-      <img src="android-dev.png">
+     <a href="#"><img src="android-dev.png">
+	 </a>
 	<div class="img-overlay">
 	<div class="flip-tab">
 	<div class="rate-bar">
@@ -283,7 +260,7 @@ When I was in my senior high school level, I started building simple websites bu
 	</div>
       </div>
 		<div class="text">I have an experience in mobile programming, especially in android. As stated on about me section, I modified stock android 4.4 system and made it to a Lollipop UI/UX(Android 5.0). 
-		<br><br> And was used by thousands of users even in other countries.</div>
+		<br><br> And was used by thousands of users even in other countries as porters from different communities/country ported it so they can use it on their devices and to have an official support for my latest updates. </div>
 	</div>
     <div class="desc">Mobile Programming</div>
   </div>
@@ -302,7 +279,7 @@ When I was in my senior high school level, I started building simple websites bu
 	</div>
       </div>
 		<div class="text">Creating websites is one of the things I always love and like to pursue. I always have the energy to learn more things in this field and apply it to my projects.
-		<br><br>If I'll be a professional in something, this will be the one I'll be choosing.</div>
+		<br><br>If I'll be a professional in something, this will be the one I'll be choosing. <br><br>This thing always gives me ab excitements in every work I do, as it's satisfying how you achieve the designs and plans you wanted to see.</div>
 	</div>
     <div class="desc">Web Programming</div>
   </div>
@@ -319,21 +296,82 @@ When I was in my senior high school level, I started building simple websites bu
     <header>
         <h1>Projects</h1>
     </header>
-    <div class="text-container">
-      <div class="text-box">
-      <img id="contactcard" src="mypic.jpg"  class="center">
-      </div>
-      <div class="text-box2">
-        <p>
-          Name: <br> Birthdate<br> Address<br>
-        </p>
-      </div>
-      <div class="text-box2">
-        <p>
-		  Jefferson S. Rivera <br> 09/27/1999 <br> Brgy. San Miguel Castaneda Street #156, Tarlac City	
-        </p>
-      </div>
+    <div id="myBtnContainer">
+  <button class="button-on-tab" onclick="filterSelection('all')"> Show all</button>
+  <button class="button-on-tab" onclick="filterSelection('nature')"> Nature</button>
+  <button class="button-on-tab" onclick="filterSelection('cars')"> Cars</button>
+  <button class="button-on-tab" onclick="filterSelection('people')"> People</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column2 nature">
+    <div class="contentststs">
+      <img src="game2.gif" alt="Mountains" style="width:100%">
+      <h4>Mountains</h4>
+      <p>Lorem ipsum dolor..</p>
     </div>
+  </div>
+  <div class="column2 nature">
+    <div class="contentststs">
+    <img src="game1.gif" alt="Lights" style="width:100%">
+      <h4>Lights</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column2 nature">
+    <div class="contentststs">
+    <img src="game1.gif" alt="Nature" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  
+  <div class="column2 cars">
+    <div class="contentststs">
+      <img src="game1.gif" alt="Car" style="width:100%">
+      <h4>Retro</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column2 cars">
+    <div class="contentststs">
+    <img src="game1.gif" alt="Car" style="width:100%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column2 cars">
+    <div class="contentststs">
+    <img src="game1.gif" alt="Car" style="width:100%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column2 people">
+    <div class="contentststs">
+      <img src="game1.gif" alt="Car" style="width:100%">
+      <h4>Girl</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column2 people">
+    <div class="contentststs">
+    <img src="game1.gif" alt="Car" style="width:100%">
+      <h4>Man</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column2 people">
+    <div class="contentststs">
+    <img src="game1.gif" alt="Car" style="width:100%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
   </div>
 </section>
 <script src="myscripts.js"></script>

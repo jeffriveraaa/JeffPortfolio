@@ -100,6 +100,7 @@ div.spacer{
 }
 
 .img-overlay {
+  overflow-y: auto;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -113,6 +114,10 @@ div.spacer{
 }
 
 .gallery:hover .img-overlay {
+  opacity: 1;
+}
+
+.gallery:active .img-overlay {
   opacity: 1;
 }
 
@@ -163,4 +168,100 @@ div.rating-caption {
 
 div.flip-tab {
   padding: 15px;
+}
+
+.button-on-tab {
+  border-radius: 4px;
+  border: none;
+  color: rgba(255, 255, 255, 1);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #7a51d0, #873260);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button-on-tab span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-on-tab span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -5px;
+  transition: 0.5s;
+}
+
+.button-on-tab:hover span {
+  padding-right: 15px;
+}
+
+.button-on-tab:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column2 {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.contentststs {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
 }

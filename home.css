@@ -144,6 +144,13 @@ div.container2 {
   padding: 250px;
 }
 
+div.container5 {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+   padding: 120px;
+}
+
 p.p1 {
   line-height: 1.8;
   text-align: justify;
@@ -222,6 +229,17 @@ h1.headerprofile {
 h1.headerprofile:hover {
   font-size: 45px;	
   opacity: 0.6;
+}
+
+h1.simulation-text-header{
+  font-size: 40px;
+  text-align: center;
+  font-weight: 500;
+  background-image: linear-gradient(to left, #ffffff, #F9F9F9);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 0.3s;
 }
 
 p.p2 {
