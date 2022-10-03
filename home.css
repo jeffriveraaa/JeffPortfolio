@@ -677,22 +677,3 @@ div.container2 {
   }
 }
 
-
-@media screen and (max-width: 600px){
-	div.container {
-    padding: 190px 20px;
-	}
-}
-
-@media screen and (max-width: 430px){
-	div.container {
-    padding: 180px 20px;
-	}
-}
-
-
-@media screen and (max-width: 380px){
-	div.container {
-    padding: 130px 20px;
-	}
-}
