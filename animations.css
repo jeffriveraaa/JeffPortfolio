@@ -124,8 +124,7 @@ section .container{
   margin: 100px;
 }
 section .container2{
-  text-align: center;
-  margin: 100px;
+  align-items: center;
 }
 section h1{
   font-size: 3rem;
