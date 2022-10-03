@@ -677,3 +677,11 @@ div.container2 {
   }
 }
 
+
+@media screen and (max-width: 430px){
+	div.container {
+    padding: 225px 20px;
+	}
+}
+
+
