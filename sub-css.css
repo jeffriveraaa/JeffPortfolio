@@ -19,11 +19,11 @@ nav a:hover {
 }
 
 #main-nav.sticky {
-	  list-style-type: none;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+	list-style-type: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 	color: white;
     z-index: 2;
 	position: fixed;
@@ -253,7 +253,9 @@ div.flip-tab {
   border: none;
   outline: none;
   padding: 12px 16px;
-  background-color: white;
+  color: white;
+  opacity: 0.6;
+  background: transparent;
   cursor: pointer;
 }
 
@@ -261,7 +263,18 @@ div.flip-tab {
   background-color: #ddd;
 }
 
-.btn.active {
-  background-color: #666;
-  color: white;
+.btn.active2 {
+  opacity: 1; 
 }
+
+.active2 {
+  opacity: 1; 
+}
+
+#myBtnContainer{
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #7a51d0, #873260);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.mySlides {display:none;}
