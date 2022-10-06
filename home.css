@@ -86,7 +86,8 @@ ul {
 }
 
 #socials:hover {
-  color: white;
+  opacity: 1;
+  color: #ffffff;
   height: 62x;
   width: 62px;
 }
@@ -374,6 +375,16 @@ opacity: 0.5;
   background-color: #fff;
 }
 
+.button:focus{
+  font-size: 10px;
+  padding: 4px 28px;
+  border: 2px solid #fff;
+  color: #000000;
+  opacity: 1;
+  background-color: #fff;
+}
+
+
 .overlay {
   position: fixed;
   z-index: 2;
@@ -490,7 +501,8 @@ a{
 }
 
 .flex-child {
-    flex: 1;
+	overflow-y: auto;
+    flex: 2;
 }  
 
 .flex-child:first-child {
@@ -507,10 +519,9 @@ a{
 
 .flex-child3 {
     flex: 1;
-	display: none;
 }  
 
-.flex-child2:first-child {
+.flex-child3:first-child {
     margin-right: 20px;
 } 
 
@@ -650,6 +661,20 @@ html, body {
   }
 }
 
+/* Projects Columns*/
+ 
+@media screen and (max-width: 1300px){
+	div.column2 {
+    width: 50%;
+	}
+}
+
+@media screen and (max-width: 580px){
+	div.column2 {
+    width: 100%;
+	}
+}
+
 @media screen and (max-width: 900px){
 div.container2 {
   width: 100%;
@@ -657,8 +682,7 @@ div.container2 {
   align-items: center;
   text-align: center;
   padding: 250px 1px;
-}
-
+  }
 }
 
 @media screen and (max-width: 700px){
@@ -670,22 +694,12 @@ div.container2 {
     width: 70%;
   }
   
-  div.flex-child2{
-    display: none;
+  .flex-container {
+    flex-direction: column;
   }
   
-  div.flex-child3{
-    display: block;
-  }
-}
-
-@media screen and (max-width: 640px){
-  div.flex-child2{
-    display: none;
-  }
-  
-    div.flex-child3{
-    display: block;
+  div.background{
+	 overflow-y: auto;
   }
 }
 

@@ -1,5 +1,6 @@
 #main-nav {
   position: fixed;
+  background-color: rgba(255, 255, 255, 0);
   list-style-type: none;
   width: 100%;
   margin: 0;
@@ -19,6 +20,7 @@ nav a:hover {
 }
 
 #main-nav.sticky {
+	position: relative;
 	list-style-type: none;
 	width: 100%;
 	margin: 0;
@@ -132,6 +134,17 @@ div.spacer{
   -webkit-background-clip: text;
 }
 
+p.text2 {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  background-image: linear-gradient(to left, #000, #000);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 /* The bar container */
 .bar-container {
   width: 100%;
@@ -227,6 +240,7 @@ div.flip-tab {
 .column2 {
   float: left;
   width: 33.33%;
+  height: 400px;
   display: none; /* Hide all elements by default */
 }
 
@@ -278,3 +292,16 @@ div.flip-tab {
 }
 
 .mySlides {display:none;}
+
+#panel {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  display: none;
+}
+
+div.panel{
+  z-index: 1;
+  position: absolute;
+}

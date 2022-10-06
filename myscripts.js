@@ -1,3 +1,10 @@
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+
+
 var myIndex = 0;
 carousel();
 
