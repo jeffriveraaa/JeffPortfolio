@@ -12,7 +12,7 @@
 }
 
 .background2 {
-  background: linear-gradient(132deg, #FD841F, #E14D2A, #FFE9A0);
+  background: linear-gradient(132deg, #191919, #040303, #553939);
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   position: relative;
