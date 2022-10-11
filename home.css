@@ -92,6 +92,7 @@ ul {
   width: 45px;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  animation: socials-anim 5s normal;
   transition: 0.3s;
 }
 
@@ -100,6 +101,17 @@ ul {
   color: #ffffff;
   height: 62x;
   width: 62px;
+}
+
+@keyframes socials-anim {
+  0%   {opacity: 0;}
+  25%  {opacity: 0;}
+  40%  {opacity: 0;}
+  50%  {opacity: 0;}
+  70% {opacity: 0;}
+  80% {opacity: 0.5;}
+  90% {opacity: 0.3;}
+  100% {opacity: 0.6;}
 }
 
 li {
@@ -263,7 +275,7 @@ div.image-wrapper {
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
-  animation: example 5s infinite;
+  animation: wrapper-anim 5s infinite;
   transition: 0.3s;
 }
 
@@ -272,7 +284,7 @@ div.image-wrapper:hover {
 	height: 208px;
 }
 
-@keyframes example {
+@keyframes wrapper-anim {
   0%   {background-color: #937DC2;}
   25%  {background-color: #B1B2FF;}
   40%  {background-color: #ABD9FF;}
@@ -291,12 +303,24 @@ div.image-wrapper:hover {
   margin-top: 4px;
   border-radius: 50%; 
   transition: 0.3s;
+  animation: profile-anim 5s normal;
  }
  
  #profilep:hover{
 	width: 200px;
 	height: 200px;
  }
+ 
+@keyframes profile-anim {
+  0%   {opacity: 0;}
+  25%  {opacity: 1;}
+  40%  {opacity: 0;}
+  50%  {opacity: 1;}
+  70% {opacity: 0;}
+  80% {opacity: 1;}
+  90% {opacity: 0;}
+  100% {opacity: 1;}
+}
 
 @keyframes border {
   0% {
@@ -359,7 +383,19 @@ div.image-wrapper:hover {
   border-radius: 25px;
   text-decoration: none;
   cursor: pointer;
+  animation: button-anim 7s normal;
   transition: all 0.3s ease-out;
+}
+
+@keyframes button-anim {
+  0%   {opacity: 0;}
+  25%  {opacity: 0;}
+  40%  {opacity: 0;}
+  50%  {opacity: 0;}
+  70% {opacity: 0;}
+  80% {opacity: 0;}
+  90% {opacity: 0.4;}
+  100% {opacity: 0.6;}
 }
 
 a:hover{

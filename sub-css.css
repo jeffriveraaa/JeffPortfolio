@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
 #main-nav {
   position: fixed;
   background-color: rgba(255, 255, 255, 0);
@@ -347,4 +349,22 @@ div.flip-tab {
 div.panel{
   z-index: 1;
   position: absolute;
+}
+
+
+.ml2 {
+  position: relative;
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+}
+
+.ml12 {
+  font-weight: 200;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.ml12 .letter {
+  line-height: 1em;
 }
