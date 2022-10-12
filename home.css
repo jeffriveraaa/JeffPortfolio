@@ -383,7 +383,7 @@ div.image-wrapper:hover {
   border-radius: 25px;
   text-decoration: none;
   cursor: pointer;
-  animation: button-anim 7s normal;
+  animation: button-anim 6.6s normal;
   transition: all 0.3s ease-out;
 }
 
