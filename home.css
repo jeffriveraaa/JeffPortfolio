@@ -19,7 +19,7 @@ html {
 }
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+  background: linear-gradient(132deg, #591BC5, #591BC5, #591BC5);
 }
 
 footer {
