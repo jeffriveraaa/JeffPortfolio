@@ -6,6 +6,10 @@
   text-transform: uppercase;
 }
 
+#ml15_gfx{
+  color: #F5F5F5;
+}
+
 .ml12 {
   font-weight: 200;
   font-size:2vw;
@@ -29,6 +33,10 @@ header h1 {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+#GFX_h1{
+  color: #3B3486;
 }
 
 div.spacer70{

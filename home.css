@@ -632,6 +632,11 @@ div.gallery {
   border: 0px solid #ccc;
 }
 
+#gallery3 {
+  position: relative;
+  border: 0px solid #ccc;
+}
+
 div.gallery:hover {
   border: 0px solid #777;
 }
