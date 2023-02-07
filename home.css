@@ -14,7 +14,7 @@ html {
     overflow-x: hidden;	
 }
 ::-webkit-scrollbar {
-    width: 15px;  /* Remove scrollbar space */
+    width: 7px;  /* Remove scrollbar space */
     background-color: rgba (0, 0, 0, 0);  /* Optional: just make scrollbar invisible */
 }
 /* Optional: show position indicator in red */
