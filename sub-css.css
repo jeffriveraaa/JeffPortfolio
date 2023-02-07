@@ -156,12 +156,11 @@ nav .container ul li a {
 
 .gfx_button {
   border: none;
-  color: white;
   padding: 12px 22px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   margin: 4px 2px;
   border-radius: 25px;
   transition-duration: 0.4s;
@@ -189,9 +188,17 @@ nav .container ul li a {
 }
 
 .gfx_button1 {
-  background-color: 5D3891; 
-  color: white; 
+  background-image: linear-gradient(to left, #D77FA1, #D96098);
+  color: #F5F5F5; 
+  font-weight: bold;
   border: 2px solid #ffffff;
+}
+
+.fa-download {
+  background-image: linear-gradient(to left, #7743DB, #D96098);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 nav .container ul li.active {
