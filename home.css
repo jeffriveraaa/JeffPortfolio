@@ -133,6 +133,15 @@ li {
   float: right;
 }
 
+#hidden-gem {
+  float: right;
+  display: none;
+}
+
+ #hidden-gem2 {
+  display: block;
+ }
+
 
 img.socialicon {
   height: 28px;
@@ -396,6 +405,10 @@ div.image-wrapper:hover {
   cursor: pointer;
   animation: button-anim 6.6s normal;
   transition: all 0.3s ease-out;
+}
+
+#btn-hide{
+  display: relative;
 }
 
 @keyframes button-anim {
@@ -763,6 +776,17 @@ div.container2 {
   div.background{
 	 overflow-y: auto;
   }
+}
+
+@media screen and (max-width: 460px){
+ #hidden-gem {
+  float: right;
+  display: block;
+ }
+ 
+ #btn-hide {
+  display: none;
+ }
 }
 
 
