@@ -625,6 +625,10 @@ div.panel{
   width: 50%;
 }
 
+#mockups-demo{
+  color: #332119;
+}
+
 /* Clear floats after rows */ 
 .gfx_row:after {
   content: "";
